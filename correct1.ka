@@ -1,0 +1,36 @@
+def main():
+i, space, rows,k, count, count1: integer;
+k=0;
+count=0;
+count1=0;
+rows=6;
+for i in [1:rows]:
+for space in [0:rows-i]:
+printf("  ");
+   
+count=count+1;
+endfor;
+
+while(k != 2 * i - 1):
+    if (count <= rows - 1):
+    printf("%d ", i + k);
+    count=count+1;
+    else:
+    count1=count1+1;
+        printf("%d ", i + k - 2 * count1);
+   endif;
+
+k=k+1;
+endwhile;
+
+count1 = 0;
+count =0;
+k = 0;
+      printf("\n");
+
+endfor;
+
+ return 0;
+
+
+enddef;

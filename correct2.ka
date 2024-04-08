@@ -1,0 +1,41 @@
+def main():
+
+low, high,i, flag: integer;
+
+
+
+low=10;
+high=50;
+printf("Prime numbers between %d and %d are: ", low, high);
+
+
+while (low < high):
+      flag = 0;
+
+      if (low <= 1) :
+         low=low+1;
+         continue;
+      endif;
+
+
+
+for i in [2: low: 1]:
+
+         if (low % i == 0):
+            flag = 1;
+            break;
+         endif;
+ endfor;
+
+
+      if (flag == 0):
+         printf("%d ", low);
+       endif;
+
+
+     low=low+1;
+
+endwhile;
+
+
+enddef;
